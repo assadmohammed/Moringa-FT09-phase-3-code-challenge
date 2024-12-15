@@ -29,7 +29,7 @@ class Author:
     @name.setter
     def name(self, new_name):
         if hasattr(self, '_name'):
-            raise AttributeError("Name cannot be changed after initializING")
+            raise AttributeError("Name cannot be changed after initialized")
         else:
             if isinstance(new_name, str):
                 if len(new_name) > 0:
